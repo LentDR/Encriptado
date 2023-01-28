@@ -8,21 +8,28 @@
 
 .logo{
     padding-top: 10px;
-    margin-left: 10px; 
-    width: 6%;
+    margin-left: 40px; 
+    width: 120px;
 }
 
 main{
+    width: 940px;
+    border-radius: 25px;
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    margin: 25px auto;
 }
-
+.entrantecodigo{
+    background: #D8DFE8;
+    border: 1px none#D8DFE8;
+    border-radius: 30px;
+}
 .texto{
+    background: #D8DFE8;    
     border: none;
     color: #0A3871;
-    margin-top: 90px;
+    margin: 50px 50px 50px 50px;
     text-transform: lowercase;
+    padding-left: 30px;
 }
 
 ::placeholder{color: #0A3871;}
@@ -32,43 +39,49 @@ main{
     }
 
 
-.textoinquierda{
+.textoizquierda{
     background: white;
     background-image: url("/imagenes/Muñeco.png");
+    display: flex;
     background-repeat: no-repeat;
-    border: none;
-    border-radius: 24px;
+    border: none white;
+    border-radius: 30px;
     color: #0A3871;
     margin: 98px 0 0 20px;
     padding-left: 20px;
-    position: fixed;
+    position:absolute;
 }
 
-.textozquierda:focus{
+.textoizquierda:focus{
     outline: none;
 
 }
 
 .botones{
+    background: #D8DFE8;
+    border: 1px none #D8DFE8;
+    border-radius: 25px;
     display: flex;
     margin-top: 18;
 }
 .botonencriptar{
-    background: #0A3871;
+    background: #0e3e79de;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: white;
     cursor: pointer;
-    height: 64px;
+    margin: 25px;
+    height: 50px;
     width: 330px;
 }
 .botondesencriptar{
-    background: #D8DFE8;
+    background: rgba(238, 238, 238, 0.89);
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
-    height: 64px;
+    margin: 25px;
+    height: 50px;
     width: 330px;
 }
 .botoncopiar{
@@ -84,6 +97,35 @@ main{
     width: 338px;
 } 
 .info{
+    background: #D8DFE8;
     color: #495057;
     font-size: 18px;
-}  
+    padding-left: 30px;
+} 
+
+.informacionpersonal{
+    background-color: #D8DFE8;
+    border: 1px none black;
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 75px;
+}
+
+.logosinformacion{
+    background-color: #D8DFE8;
+    width: 45px;
+    padding-top: 20px 
+}
+.link{
+    display: inline-block;
+    background-color: #D8DFE8;
+    margin: 25px 0;
+}
+.nombre{
+    display: inline-block;
+    font-size: 25px;
+    margin: 25px;
+    background: #D8DFE8;
+    font-style: unset ;
+}
