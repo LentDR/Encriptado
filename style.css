@@ -27,7 +27,7 @@ main{
     background: #D8DFE8;    
     border: none;
     color: #0A3871;
-    margin: 50px 50px 50px 50px;
+    margin: 50px 50px 0 50px;
     text-transform: lowercase;
     padding-left: 30px;
 }
@@ -74,6 +74,12 @@ main{
     height: 50px;
     width: 330px;
 }
+.botonencriptar:hover{
+    background: #103e75;
+    transition: 0.5s;
+    height: 51px;
+    width: 332px;
+}
 .botondesencriptar{
     background: rgba(238, 238, 238, 0.89);
     border: 1px solid #0A3871;
@@ -83,6 +89,13 @@ main{
     margin: 25px;
     height: 50px;
     width: 330px;
+}
+.botondesencriptar:hover{
+    background: #ffffffd7;
+    transition: 0.5s;
+    border-color: #0a243a;
+    height: 51px;
+    width: 332px;
 }
 .botoncopiar{
     background: white;

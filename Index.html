@@ -21,12 +21,12 @@
             <textarea class = "texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
             
             <div>
-                <h6 class = "info">Solo letras minúsculas y sin acentos</h6>
+                <h6 class = "info">&#x26a0 Solo letras minúsculas y sin acentos</h6>
             </div>
 
             <div class = "botones">
                 <button class="botonencriptar" onclick="btnEncriptar()">Encriptar</button>
-                <button class="botondesencriptar">Desencriptar</button>
+                <button class="botondesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
 
         </section>
@@ -34,10 +34,11 @@
         <section class="salidacodigo">
             <textarea class = "textoizquierda" cols = "20" rows ="13"></textarea>
             <div>
-                <button class = "botoncopiar">Copiar</button>
+                <button class = "botoncopiar" onclick="Copiar()">Copiar</button>
             </div>
         </section>
     </main>
+<script src="script.js"></script>
     <footer>
         <section class="informacionpersonal">
         <a href = "https://github.com/LentDR" class="link"><img a href = "https://github.com/LentDR" class="logosinformacion" src="imagenes/logo github.png" alt = "logo github" ></a>
