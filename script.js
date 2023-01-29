@@ -49,5 +49,6 @@ function Desencriptar(stringDesencriptado){
 function Copiar(){
     textoizquierda.select();
     document.execCommand("copy")
+    textoizquierda.style=m
 }
 

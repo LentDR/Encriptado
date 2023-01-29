@@ -75,8 +75,9 @@ main{
     width: 330px;
 }
 .botonencriptar:hover{
-    background: #103e75;
+    background: rgba(238, 238, 238, 0.89);
     transition: 0.5s;
+    color: #0A3871;
     height: 51px;
     width: 332px;
 }
@@ -91,8 +92,9 @@ main{
     width: 330px;
 }
 .botondesencriptar:hover{
-    background: #ffffffd7;
+    background: #0A3871;
     transition: 0.5s;
+    color: white;
     border-color: #0a243a;
     height: 51px;
     width: 332px;
@@ -109,6 +111,11 @@ main{
     height: 64px;
     width: 338px;
 } 
+.botoncopiar:hover{
+    background: #0A3871;
+    color: white;
+    transition: 0.5s;
+}
 .info{
     background: #D8DFE8;
     color: #495057;
