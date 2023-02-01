@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
     <meta charset = "UTF-8">
     <meta http-equiv = "X-UA-Compatible" content="IE=edge">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="/style.css">
+
+    <link rel = "stylesheet" href="./reset.css">
+
+    <link rel = "stylesheet" href="./style.css">
+
     <link rel = "preconnect" href="https://fonts.googleapis.com">
+
     <link rel = "preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" href="imagenes/icon.ico.png" />
+
+
     <title>Encriptador Alura</title>
 </head>
 <body>
@@ -22,7 +31,7 @@
             <textarea class = "texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
             
             <div>
-                <h6 class = "info">&#x26a0 Solo letras minúsculas y sin acentos</h6>
+                <h1 class = "info">&#x26a0 Solo letras minúsculas y sin acentos</h1>
             </div>
 
             <div class = "botones">
@@ -33,19 +42,22 @@
         </section>
 
         <section class="salidacodigo">
-            <textarea class = "textoizquierda" cols = "20" rows ="13"></textarea>
-            <div>
+            <textarea class = "textoizquierda" cols = "20" rows ="13" placeholder="No se ha encontado ningun mensaje"></textarea>
+            <div class="colorDeFondoDelBoton">
                 <button class = "botoncopiar" onclick="Copiar()">Copiar</button>
             </div>
         </section>
     </main>
-<script src="script.js"></script>
+    
     <footer>
         <section class="informacionpersonal">
         <a href = "https://github.com/LentDR" class="link"><img a href = "https://github.com/LentDR" class="logosinformacion" src="imagenes/logo github.png" alt = "logo github" ></a>
-        <a href="https://www.linkedin.com/in/lorenzo-depaz-71657a258/" class="link"><img class="logosinformacion" src="imagenes/log linkedin.png" alt = "logo github"></a>
-        <h1 class="nombre">&copy designer by Luis DR</h1>
+        <a href = "https://www.linkedin.com/in/lorenzo-depaz-71657a258/" class="link"><img class="logosinformacion" src="imagenes/log linkedin.png" alt = "logo github"></a>
+        <h1 class = "link">&copy designer by Luis DR</h1>
         </section>
     </footer>
+
+    <script src = "./script.js" ></script>
+
 </body>
 </html>

@@ -1,3 +1,7 @@
+:root{
+    --defondo: #edf2fd;
+    --coloinformacion: #e3ebf5;
+}
 *{
     background:  #F3F5FC;
     font-family: 'Inter';
@@ -7,70 +11,96 @@
 }
 
 .logo{
-    padding-top: 10px;
-    margin-left: 40px; 
-    width: 120px;
+    padding: 0 10px;
+    margin-left: 15px; 
+    width: 100px;
 }
 
+body{
+    width: 940PX; 
+    margin: 20px auto;
+}
 main{
-    width: 940px;
     border-radius: 25px;
     display: flex;
-    margin: 25px auto;
+    margin: 20px auto;
 }
+
 .entrantecodigo{
-    background: #D8DFE8;
-    border: 1px none#D8DFE8;
+    background: var(--defondo);
+    width: 50%;
+    height: 530px;
+    margin: 0 0 30px 50px;
+    display: inline-block;
+    border: 1px none var(--defondo);
     border-radius: 30px;
 }
+
+.salidacodigo{
+    display: inline-block;
+    background-color: white;
+    border-radius: 60px;
+    margin: 0 25px ;
+}
+
 .texto{
-    background: #D8DFE8;    
+    background: var(--defondo);    
     border: none;
+    width: 90%;
+    height: 280px;
     color: #0A3871;
-    margin: 50px 50px 0 50px;
+    margin: 25px 0px;
     text-transform: lowercase;
     padding-left: 30px;
 }
 
-::placeholder{color: #0A3871;}
+::placeholder{color: #0A3871;
+    font-size: 25px;}
 
 .texto:focus{
     outline: none;
     }
 
-
 .textoizquierda{
     background: white;
-    background-image: url("/imagenes/Muñeco.png");
-    display: flex;
+    background-image: url("./imagenes/Muñeco.png");
+    background-position-y: 100%;
     background-repeat: no-repeat;
     border: none white;
     border-radius: 30px;
     color: #0A3871;
-    margin: 98px 0 0 20px;
-    padding-left: 20px;
-    position:absolute;
+    margin: 30px 30px 0 30px;
+    width: 309px;
+    height: 400px;
+}
+
+.textoizquierda::placeholder{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    padding: 30px;
 }
 
 .textoizquierda:focus{
     outline: none;
-
 }
 
 .botones{
-    background: #D8DFE8;
-    border: 1px none #D8DFE8;
-    border-radius: 25px;
+    background: var(--defondo);
+    border: 1px none ;
+    border-radius: 0 0 60px 60px;
     display: flex;
-    margin-top: 18;
+    
 }
 .botonencriptar{
     background: #0e3e79de;
     border: 1px solid #0A3871;
-    border-radius: 24px;
+    border-radius: 60px;
     color: white;
     cursor: pointer;
-    margin: 25px;
+    font-size: 25px;
+    margin: 0 25px 25px 25px;
     height: 50px;
     width: 330px;
 }
@@ -87,10 +117,12 @@ main{
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
-    margin: 25px;
+    font-size: 25px;
+    margin: 0 25px 0 25px;
     height: 50px;
     width: 330px;
 }
+
 .botondesencriptar:hover{
     background: #0A3871;
     transition: 0.5s;
@@ -99,53 +131,119 @@ main{
     height: 51px;
     width: 332px;
 }
+.colorDeFondoDelBoton{
+    background-color: white;
+    height: 75px;
+    border-radius: 25px;
+}
+
 .botoncopiar{
     background: white;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
-    position: absolute;
-    margin-left: 31px;
-    margin-top: 590px;
-    height: 64px;
-    width: 338px;
-} 
+    font-size: 25px;
+    margin: 35px 88px 30px 88px;
+    height: 50px;
+    width: 200px;
+}
+
 .botoncopiar:hover{
     background: #0A3871;
     color: white;
     transition: 0.5s;
 }
+
 .info{
-    background: #D8DFE8;
+    background: var(--defondo);
     color: #495057;
     font-size: 18px;
     padding-left: 30px;
+    margin-top: 100px;
 } 
 
 .informacionpersonal{
-    background-color: #D8DFE8;
+    background-color: var(--coloinformacion);
     border: 1px none black;
     border-radius: 25px;
     text-align: center;
     padding: 10px;
-    margin: 0 75px;
 }
 
 .logosinformacion{
-    background-color: #D8DFE8;
-    width: 45px;
+    background-color: var(--coloinformacion);
+    width: 25px;
     padding-top: 20px 
 }
+
 .link{
     display: inline-block;
-    background-color: #D8DFE8;
-    margin: 25px 0;
+    background-color: var(--coloinformacion);
+    margin: 0;
+    font-size: 20px;
 }
-.nombre{
-    display: inline-block;
-    font-size: 25px;
-    margin: 25px;
-    background: #D8DFE8;
-    font-style: unset ;
+
+@media screen and (max-width: 940px){
+    :root{
+        --defondo: #edf2fd00;
+        --coloinformacion: #e3ebf5;
+    }
+    body,.entrantecodigo{
+        width: auto;
+        margin: 25px 5px;
+        text-align: center;
+    }
+    .logo{
+        padding: 0;
+    }
+
+    main{
+        display: block;
+        width: 100%;
+    }
+    .texto{
+        display: inline;
+        font-size: 20px;
+        width: 70%;
+    }
+    .texto::placeholder{
+        text-align: center;
+    }
+
+    .textoizquierda{
+        width: 85%;
+        background-position-x: -40px;
+        font-size: 25px;
+    }
+    .info{
+        display: inline-block;
+        padding: 0;
+    }
+    .botones{
+        position: static;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .botondesencriptar,.botondesencriptar:hover, .botonencriptar:hover, .botonencriptar{
+        height: 50px;
+        width: 140px;
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .botoncopiar,.botoncopiar:hover{
+        margin: 10px auto;
+    }
+
+    .informacionpersonal{
+        width: auto;
+    }
+    footer{
+        display: block;
+        width: auto;
+    }
 }
+    
